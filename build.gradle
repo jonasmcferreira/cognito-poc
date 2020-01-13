@@ -21,3 +21,8 @@ dependencies {
     implementation "software.amazon.awssdk:cognitoidentityprovider:${awsSdkVersion}"
     implementation "software.amazon.awssdk:ssm:${awsSdkVersion}"
 }
+
+application {
+    // URI of your main class/application's entry point (required)
+    mainClassName = 'CognitoAuthenticator'
+}
