@@ -13,5 +13,8 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation "software.amazon.awssdk:utils:${awsSdkVersion}"
+    testImplementation "software.amazon.awssdk:cognitoidentity:${awsSdkVersion}"
+    testImplementation "software.amazon.awssdk:cognitoidentityprovider:${awsSdkVersion}"
+    testImplementation "software.amazon.awssdk:ssm:${awsSdkVersion}"
 }
